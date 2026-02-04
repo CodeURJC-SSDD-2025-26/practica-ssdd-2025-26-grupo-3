@@ -3,9 +3,9 @@
 ## 👥 Miembros del Equipo
 | Nombre y Apellidos | Correo URJC | Usuario GitHub |
 |:--- |:--- |:--- |
-| Mario Sauce Soriano | [m.sauce.2023@alumnos.urjc.es | TabokGit |
-| Demelza Santamaría Gil | [email2]@alumnos.urjc.es |  |
-| Alma Lucía Vázquez Beltrán | [al.vazquez.2022@alumnos.urjc.es | soulieOG |
+| Mario Sauce Soriano | m.sauce.2023@alumnos.urjc.es | TabokGit |
+| Demelza Santamaría Gil | [email2]@alumnos.urjc.es] | [User2] |
+| Alma Lucía Vázquez Beltrán | al.vazquez.2022@alumnos.urjc.es | soulieOG |
 | [Nombre 4] | [email4]@alumnos.urjc.es | [User4] |
 
 ---
