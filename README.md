@@ -11,8 +11,8 @@
 
 ## 🎭 **Preface**
 
-### **Descripción del Tema**
-[Escribe aquí una descripción breve y concisa de qué trata tu aplicación, el sector al que pertenece y qué valor aporta al usuario].
+### **Description of the topic**
+PostCredits is a reviews website that allows users to rate and see others' ratings of various media (such as video games, books, films and TV shows).
 
 ### **Entities**
 
