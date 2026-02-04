@@ -12,58 +12,55 @@
 ## 🎭 **Preface**
 
 ### **Description of the topic**
-PostCredits is a reviews website that allows users to rate and see others' ratings of various media (such as video games, books, films and TV shows).
+PostCredits is a reviews website that allows users to rate and see others' ratings of various media (such as video games and books).
 
 ### **Entities**
 
-1. **User**: 
-2. **Books**: [Ej: Producto]
-3. **Videogames**:
-4. **Review**:
+1. **User**: it represents the people who use the app.
+2. **Book**: it represents the books available to be rated.
+3. **Videogame**: it represents the games available to be rated.
+4. **Review**: central entity of the system.
 
 **Relaciones entre entidades:**
-- [Ej: Usuario - Pedido: Un usuario puede tener múltiples pedidos (1:N)]
-- [Ej: Pedido - Producto: Un pedido puede contener múltiples productos y un producto puede estar en múltiples pedidos (N:M)]
-- [Ej: Producto - Categoría: Un producto pertenece a una categoría (N:1)]
-- [Descripción de otras relaciones relevantes]
+- User-Review: a user can write many reviews, a review belongs to a single user (1:N).
+- Book-Review: a book can have many reviews, a review is asociated to a single book (1:N).
+- Videogame-Review: a videogame can have many reviews, a review is asociated to a single videogame (1:N).
+- User-Book: a user can like many books, a book can have many users that likes it (N:M).
+- User-Videogame: a user can like many videogames, a videogame can have many users that likes it (N:M).
+- User-Review: a user can like many reviews, a review can have many likes (N:M).
 
-### **Permisos de los Usuarios**
-Describir los permisos de cada tipo de usuario e indicar de qué entidades es dueño:
+  ![ER Diagram](<img width="611" height="402" alt="Captura de pantalla 2026-02-04 172042" src="https://github.com/user-attachments/assets/f5295733-eec0-4991-9073-c26fa9646e89" />
+)
 
-* **Usuario Anónimo**: 
-  - Permisos: [Ej: Visualización de catálogo, búsqueda de productos, registro]
-  - No es dueño de ninguna entidad
+### **User Permits**
 
-* **Usuario Registrado**: 
-  - Permisos: [Ej: Gestión de perfil, realizar pedidos, crear valoraciones]
-  - Es dueño de: [Ej: Sus propios Pedidos, su Perfil de Usuario, sus Valoraciones]
+* **Anonymous user**: 
+  - Permits: search books and videogames (media in general), view reviews.
+  - Does not own any entity.
 
-* **Administrador**: 
-  - Permisos: [Ej: Gestión completa de productos (CRUD), visualización de estadísticas, moderación de contenido]
-  - Es dueño de: [Ej: Productos, Categorías, puede gestionar todos los Pedidos y Usuarios]
+* **Registered User**: 
+  - Permits: Log in, log out, create account, write review, view profile, like a book, like a videogame, edit review, like a review, remove the option to send e-mails, change profile picture
+  - Owns: their reviews, their content likes, their profile data
 
-### **Imágenes**
-Indicar qué entidades tendrán asociadas una o varias imágenes:
+* **Administrator**: 
+  - Permits: add new books, add new videogames, delete book, delete videogame
+  - Owns: books and videogames.
 
-- **[Entidad con imágenes 1]**: [Ej: Usuario - Una imagen de avatar por usuario]
-- **[Entidad con imágenes 2]**: [Ej: Producto - Múltiples imágenes por producto (galería)]
-- **[Entidad con imágenes 3]**: [Ej: Categoría - Una imagen representativa por categoría]
+### **Images**
 
-### **Gráficos**
-Indicar qué información se mostrará usando gráficos y de qué tipo serán:
+- **User**: one avatar image per user.
+- **Videogame**: multiple images for videogames.
+- **Book**: multiple images for books.
 
-- **Gráfico 1**: [Ej: Ventas mensuales - Gráfico de barras]
-- **Gráfico 2**: [Ej: Productos más vendidos - Gráfico de tarta/circular]
-- **Gráfico 3**: [Ej: Evolución de usuarios registrados - Gráfico de líneas]
-- **Gráfico 4**: [Ej: Distribución de pedidos por categoría - Gráfico de barras horizontales]
+### **Charts**
 
-### **Tecnología Complementaria**
-Indicar qué tecnología complementaria se empleará:
+- **Chart 1**: Products with the most reviews - Histogram
 
-- [Ej: Envío de correos electrónicos automáticos mediante JavaMailSender]
-- [Ej: Generación de PDFs de facturas usando iText o similar]
+### **Complementary Technology**
 
-### **Algoritmo o Consulta Avanzada**
+- Automatic e-mail notifications when creating an account and someone likes your review
+
+### **Algorithm or advanced query**
 Indicar cuál será el algoritmo o consulta avanzada que se implementará:
 
 - **Algoritmo/Consulta**: [Ej: Sistema de recomendaciones basado en el historial de compras del usuario]
