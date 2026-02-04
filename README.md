@@ -29,8 +29,7 @@ PostCredits is a reviews website that allows users to rate and see others' ratin
 - User-Videogame: a user can like many videogames, a videogame can have many users that likes it (N:M).
 - User-Review: a user can like many reviews, a review can have many likes (N:M).
 
-  ![ER Diagram](<img width="611" height="402" alt="Captura de pantalla 2026-02-04 172042" src="https://github.com/user-attachments/assets/f5295733-eec0-4991-9073-c26fa9646e89" />
-)
+  ![ER Diagram](https://github.com/user-attachments/assets/f57be15c-f93d-4083-ba59-4ee6893f0b5d)
 
 ### **User Permits**
 
