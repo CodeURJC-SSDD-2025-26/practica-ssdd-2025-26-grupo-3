@@ -1,27 +1,25 @@
-# [Nombre de la Aplicación]
+# PostCredits
 
-## 👥 Miembros del Equipo
-| Nombre y Apellidos | Correo URJC | Usuario GitHub |
+## 👥 Members of the team
+| Name | URJC e-mail | GitHub user |
 |:--- |:--- |:--- |
 | Mario Sauce Soriano | m.sauce.2023@alumnos.urjc.es | TabokGit |
-| Demelza Santamaría Gil | [email2]@alumnos.urjc.es] | [User2] |
+| Demelza Santamaría Gil | d.santamaria.2020@alumnos.urjc.es | QuantumAndromeda |
 | Alma Lucía Vázquez Beltrán | al.vazquez.2022@alumnos.urjc.es | soulieOG |
-| [Nombre 4] | [email4]@alumnos.urjc.es | [User4] |
 
 ---
 
-## 🎭 **Preparación: Definición del Proyecto**
+## 🎭 **Preface**
 
 ### **Descripción del Tema**
 [Escribe aquí una descripción breve y concisa de qué trata tu aplicación, el sector al que pertenece y qué valor aporta al usuario].
 
-### **Entidades**
-Indicar las entidades principales que gestionará la aplicación y las relaciones entre ellas:
+### **Entities**
 
-1. **[Entidad 1]**: [Ej: Usuario]
-2. **[Entidad 2]**: [Ej: Producto]
-3. **[Entidad 3]**: [Ej: Pedido]
-4. **[Entidad 4]**: [Ej: Categoría]
+1. **User**: 
+2. **Books**: [Ej: Producto]
+3. **Videogames**:
+4. **Review**:
 
 **Relaciones entre entidades:**
 - [Ej: Usuario - Pedido: Un usuario puede tener múltiples pedidos (1:N)]
