@@ -21,12 +21,12 @@ PostCredits is a reviews website that allows users to rate and see others' ratin
 3. **Videogame**: it represents the games available to be rated.
 4. **Review**: central entity of the system.
 
-**Relaciones entre entidades:**
+**Connection between entities:**
 - User-Review: a user can write many reviews, a review belongs to a single user (1:N).
-- Book-Review: a book can have many reviews, a review is asociated to a single book (1:N).
-- Videogame-Review: a videogame can have many reviews, a review is asociated to a single videogame (1:N).
-- User-Book: a user can like many books, a book can have many users that likes it (N:M).
-- User-Videogame: a user can like many videogames, a videogame can have many users that likes it (N:M).
+- Book-Review: a book can have many reviews, a review is associated with a single book (1:N).
+- Videogame-Review: a videogame can have many reviews, a review is associated with a single videogame (1:N).
+- User-Book: a user can like many books, a book can have many users that like it (N:M).
+- User-Videogame: a user can like many videogames, a videogame can have many users that like it (N:M).
 - User-Review: a user can like many reviews, a review can have many likes (N:M).
 
   ![ER Diagram](https://github.com/user-attachments/assets/f57be15c-f93d-4083-ba59-4ee6893f0b5d)
@@ -34,16 +34,16 @@ PostCredits is a reviews website that allows users to rate and see others' ratin
 ### **User Permits**
 
 * **Anonymous user**: 
-  - Permits: search books and videogames (media in general), view reviews.
+  - Permits: create account, search books and video games (media in general), view reviews.
   - Does not own any entity.
 
 * **Registered User**: 
-  - Permits: Log in, log out, create account, write review, view profile, like a book, like a videogame, edit review, like a review, remove the option to send e-mails, change profile picture
+  - Permits: log in, log out, write review, view profile, like a book, like a video game, edit review, like a review, remove the option to send e-mails, change profile picture
   - Owns: their reviews, their content likes, their profile data
 
 * **Administrator**: 
   - Permits: add new books, add new videogames, delete book, delete videogame
-  - Owns: books and videogames.
+  - Owns: books and video games.
 
 ### **Images**
 
@@ -53,7 +53,7 @@ PostCredits is a reviews website that allows users to rate and see others' ratin
 
 ### **Charts**
 
-- **Chart 1**: Products with the most reviews - Histogram
+- **Chart 1**: products with the most reviews - Histogram
 
 ### **Complementary Technology**
 
