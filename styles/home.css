@@ -1,0 +1,133 @@
+:root{
+    --dark_purple: #5A189A;
+    --purple: #7B2CBF;
+    --light_purple: #9D4EDD;
+    --lighter_purple: #C77DFF;
+    --lilac: #E0AAFF;
+    --bg-dark: #1f1f1f;
+    --panel-dark: #252525;
+    --text-light: #f4f4f4;
+}
+
+*{
+    box-sizing:border-box;
+}
+    
+html,body{
+    height:100%;
+}
+
+body{
+    margin:0;
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background:var(--bg-dark);
+    color:var(--text-light);
+}
+
+/* Top navigation */
+.topbar{
+    background:var(--dark_purple);
+    height:64px;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    padding:0 20px;
+}
+
+.topbar .left, .topbar .center, .topbar .right{
+    display:flex;
+    align-items:center;
+}
+
+.topbar .left{
+    gap:12px;
+}
+
+.brand-icon{
+    width:36px;
+    height:36px;
+    border-radius:8px;
+    background:linear-gradient(180deg,var(--lighter_purple),#8d3ae6);
+    box-shadow:0 2px 0 rgba(0,0,0,.25);
+    display:inline-block;
+}
+
+.center{
+    flex:1;
+    justify-content:center;
+    gap:14px;
+}
+
+.pill-btn{
+    background:var(--light_purple);
+    color:#111;
+    padding:8px 18px;
+    border-radius:24px;
+    font-weight:600;
+    box-shadow:inset 0 -4px rgba(0,0,0,.15),0 3px 0 rgba(0,0,0,.25);
+}
+
+.search{
+    display:flex;
+    align-items:center;
+    background:#e9c1ff11;
+    border-radius:24px;
+    padding:6px 10px;gap:8px;
+    min-width:280px;
+    max-width:360px;
+    border:3px solid rgba(0,0,0,.35);
+}
+
+.search input{
+    flex:1;
+    background:transparent;
+    border:0;
+    color:var(--text-light);
+    outline:none;
+    padding:6px;
+}
+
+.circle{
+    width:22px;
+    height:22px;
+    border-radius:50%;
+    background:linear-gradient(180deg,#cda6ff,#b482ff);
+    margin-left:8px;
+}
+
+/* Page content */
+.container{
+    max-width:1200px;
+    margin:18px auto;
+    padding:28px 36px;
+    background:var(--panel-dark);
+    border-radius:6px;
+    box-shadow:0 6px 30px rgba(0,0,0,.6);
+}
+
+h2{
+    margin:8px 0 20px 0;
+    font-weight:600;
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+    gap:26px;
+}
+
+.card{
+    background:var(--light_purple);
+    height:170px;
+    border-radius:18px;
+    box-shadow:0 6px 0 rgba(0,0,0,.35);
+}
+
+@media (max-width: 743.5px) {
+    
+
+    .grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
