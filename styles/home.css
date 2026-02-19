@@ -21,7 +21,7 @@ html,body{
 
 body{
     margin:0;
-    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    font-family: Roboto,'Segoe UI', Arial, sans-serif;
     background:var(--bg-dark);
     color:var(--text-light);
     min-width: 684px;
