@@ -102,3 +102,26 @@ footer {
     }
 
 }
+
+.rating{
+  unicode-bidi: bidi-override;
+  direction: rtl;
+  font-size: 30px;
+}
+
+.rating input{
+  display: none;
+}
+
+.rating label{
+  display: inline-block;
+  cursor: pointer;
+  color: #ddd;
+  transition: color 0.5s;
+}
+
+.rating label:hover,
+.rating label:hover ~ label,
+.rating input:checked ~ label{
+  color: #ffc107;
+}
