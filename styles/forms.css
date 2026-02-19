@@ -116,12 +116,12 @@ footer {
 .rating label{
   display: inline-block;
   cursor: pointer;
-  color: #ddd;
+  color: var(--text-light);
   transition: color 0.5s;
 }
 
 .rating label:hover,
 .rating label:hover ~ label,
 .rating input:checked ~ label{
-  color: #ffc107;
+  color: #FFBE55;
 }
