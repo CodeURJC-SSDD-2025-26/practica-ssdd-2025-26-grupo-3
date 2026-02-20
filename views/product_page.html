@@ -59,14 +59,21 @@
                         </button>
 
                     </div>
-                
-                    <h4>Reviews</h4>
+                    <div class="wrapped">
+                        <h4>Reviews</h4>
+                        <button type="button" class="pill-btn" onclick="window.location.href='form_review.html'">
+                            <i class="fas fa-plus"></i>Add review
+                        </button>
+
+                    </div>
                     <section class="reviews">
                         <div class="card">
                             <div class="review_struct">
                                 <div class="review_top">
                                 <h4>Harold Bloom</h4>
-                                <h4>7.8/10</h4>
+                                
+                                    <div class="stars-generator" data-rating="3.5"></div>
+                                
                                 </div>
                                 <p>"It is a work of overflowing imagination that, despite its commercial shackles, 
                                     manages to capture the agony of a god who discovers, too late, that even the purest reason can be devoured by myth."
@@ -78,7 +85,7 @@
                              <div class="review_struct">
                                 <div class="review_top">
                                 <h4>Marcel Proust Leovigildo Vargas Segundo</h4>
-                                <h4>8.2/10</h4>
+                                 <div class="stars-generator" data-rating="4"></div>
                                 </div>
                                 <p>"It is a crystal cathedral built over a nightmare abyss; a book that understands that the true horror is not death, 
                                     but the certainty that even our vastest dreams are condemned to be misunderstood by those who will follow."
@@ -89,7 +96,7 @@
                              <div class="review_struct">
                                 <div class="review_top">
                                 <h4>Arturo Pérez-Reverte</h4>
-                                <h4>8.5/10</h4>
+                                 <div class="stars-generator" data-rating="3.5"></div>
                                 </div>
                                 <p>"Es una crónica de una resistencia inútil y soberbia; el retrato de un hombre solo contra la marea, 
                                     que comprende que la historia no la escriben los vencedores, sino los que mueren con las botas puestas sabiendo que todo estaba perdido desde el principio."
@@ -107,7 +114,23 @@
             <p>©2026 PostCredits. Todos los derechos reservados.</p>
             <p>Contacto: soporte@postcredits.com | +1 234 567 89</p>
         </footer>
-        
+        <script>
+                document.querySelectorAll('.stars-generator').forEach(el => {
+                const rating = parseFloat(el.dataset.rating);
+                let html = '';
+                for (let i = 1; i <= 5; i++) {
+                    if (i <= rating) {
+                        html += '<i class="fas fa-star"></i>'; // Llena
+                    } else if (i - 0.5 <= rating) {
+                        html += '<i class="fas fa-star-half-alt"></i>'; // Media
+                    } else {
+                        html += '<i class="far fa-star"></i>'; // Vacía
+                    }
+                }
+                html += `<span class="rating-text">${rating}/5</span>`;
+                el.innerHTML = html;
+            });
+        </script>
        
     </body>
 </html>
