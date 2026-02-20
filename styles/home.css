@@ -24,7 +24,6 @@ body{
     font-family: 'Segoe UI', Roboto, Arial, sans-serif;
     background:var(--bg-dark);
     color:var(--text-light);
-    min-width: 684px;
 }
 
 /* Top navigation */
