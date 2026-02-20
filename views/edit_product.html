@@ -63,23 +63,6 @@
             <p>©2026 PostCredits. Todos los derechos reservados.</p>
             <p>Contacto: soporte@postcredits.com | +1 234 567 89</p>
         </footer>
-        <script>
-            // El código que busca los elementos por su ID
-            const fileInput = document.getElementById('product_imagen');
-            const fileNameLabel = document.getElementById('file-name');
-            const statusBadge = document.querySelector('.status-badge');
-
-            // La función que se activa cuando cambias el archivo
-            fileInput.onchange = function() {
-                if (this.files.length > 0) {
-                    // Actualiza el texto con el nombre del archivo seleccionado
-                    fileNameLabel.textContent = this.files[0].name;
-                    
-                    // Cambia el estilo de la etiqueta para indicar que es nuevo
-                    statusBadge.textContent = "Nuevo";
-                    statusBadge.style.background = "#007bff"; // Azul de Bootstrap
-                }
-            };
-        </script>
+        <script src="../js/edit_product.js"></script>
     </body>
 </html>
