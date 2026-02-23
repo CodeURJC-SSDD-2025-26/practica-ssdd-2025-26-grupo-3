@@ -40,7 +40,7 @@ main {
 
 .btn {
     background-color: var(--light_purple);
-    color: var(--bg-dark);
+    color: var(--text-light);
     font-weight: 600;
     border: 2px solid var(--bg-dark);
     border-radius: 8px;
@@ -150,42 +150,36 @@ h2 {
     border-radius: 5px 5px 0 0;
 }
 
-
-/*.popup-container {
-
+/*Pop-up*/
+.popup-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
 }
 
 .popup {
-    background: var(--purple);
+    background: var(--dark_purple);
     padding: 24px 32px;
     border-radius: 8px;
     align-items: center;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    max-width: 100%;
 }
 
-.popup .pill-btn {
-    background: var(--lilac);
+.form-label {
+    color: var(--text-light);
 }
 
-.popup input {
-    width: 100%;
-    padding: 8px 12px;
-    border-radius: 6px;
-    border: none;
-
+.form-control {
     background-color: var(--lighter_purple);
+    border: none;
 }
 
-.popup input::placeholder {
-    font-weight: bold;
-    color: var(--bg-dark);
-}*/
 
 /*Footer*/
 footer {
