@@ -28,33 +28,51 @@ main {
 /*Header*/
 .topbar {
     background: var(--dark_purple);
-    height: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 0 20px;
-    gap: 18px;
-    flex-shrink: 0;
 }
 
 .brand-icon {
-    width: 36px;
-    height: 36px;
+    width: clamp(70px, 8vw, 140px);
+    /*clamp(min,ideal,max)*/
+    height: auto;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: var(--light_purple);
+    color: var(--text-light);
+    font-weight: 600;
+    border: 2px solid var(--bg-dark);
     border-radius: 8px;
-    background: linear-gradient(180deg, var(--lighter_purple), #8d3ae6);
-    box-shadow: 0 2px 0 rgba(0, 0, 0, .25);
-    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--lighter_purple);
+}
+
+.rounded-circle {
+    width: 35px;
+    height: 35px;
+    background-color: var(--light_purple);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rounded-circle:hover {
+    background-color: var(--lighter_purple);
 }
 
 .user-profile-img {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background: linear-gradient(180deg, #cda6ff, #b482ff);
-    margin-left: 12px;
     background-image: url(../images/user.png);
     background-size: cover;
     background-position: center;
+    cursor: pointer;
 }
 
 .pill-btn {
