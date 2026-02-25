@@ -31,12 +31,6 @@ main {
 }
 
 .brand-icon {
-  width: 75px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.brand-icon {
     width: clamp(70px, 8vw, 140px);
     /*clamp(min,ideal,max)*/
     height: auto;
@@ -86,7 +80,6 @@ main {
   background: var(--panel-dark);
   border-radius: 6px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
-
 }
 
 .form-control {
@@ -117,13 +110,6 @@ footer {
 
 .buttons {
   justify-self: center;
-}
-
-@media (max-width: 743.5px) {
-  .pill-btn {
-    padding: 3px 6px;
-  }
-
 }
 
 .rating {
