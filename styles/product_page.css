@@ -1,12 +1,12 @@
 :root {
-  --dark_purple: #5a189a;
-  --purple: #7b2cbf;
-  --light_purple: #9d4edd;
-  --lighter_purple: #c77dff;
-  --lilac: #e0aaff;
-  --bg-dark: #1f1f1f;
-  --panel-dark: #252525;
-  --text-light: #f4f4f4;
+    --dark_purple: #5a189a;
+    --purple: #7b2cbf;
+    --light_purple: #9d4edd;
+    --lighter_purple: #c77dff;
+    --lilac: #e0aaff;
+    --bg-dark: #1f1f1f;
+    --panel-dark: #252525;
+    --text-light: #f4f4f4;
 }
 
 /* 1. Globales y Estructura Base */
