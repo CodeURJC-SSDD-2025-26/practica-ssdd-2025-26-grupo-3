@@ -1,32 +1,27 @@
 /*Common to all html pages*/
 :root {
-  --dark_purple: #5A189A;
-  --purple: #7B2CBF;
-  --light_purple: #9D4EDD;
-  --lighter_purple: #C77DFF;
-  --lilac: #E0AAFF;
-  --bg-dark: #1f1f1f;
-  --panel-dark: #252525;
-  --text-light: #f4f4f4;
+    --dark_purple: #5A189A;
+    --purple: #7B2CBF;
+    --light_purple: #9D4EDD;
+    --lighter_purple: #C77DFF;
+    --lilac: #E0AAFF;
+    --bg-dark: #1f1f1f;
+    --panel-dark: #252525;
+    --text-light: #f4f4f4;
 }
 
 html,
 body {
-  height: 100%;
-  font-family: Roboto, "Segoe UI", Arial, sans-serif;
-  background: var(--bg-dark);
-  color: var(--text-light);
-  display: flex;
-  flex-direction: column;
+    font-family: Roboto, "Segoe UI", Arial, sans-serif;
+    background: var(--bg-dark);
+    color: var(--text-light);
 }
 
 main {
-  display: flex;
-  align-items: center;
-  flex: 1;
+    flex: 1;
 }
 
-        /*HEADER*/
+/*HEADER*/
 
 /*TOPBAR*/
 /*forms, home and product_page*/
@@ -47,8 +42,6 @@ main {
 /*SEARCH*/
 /*home*/
 .search {
-    display: flex;
-    align-items: center;
     background: var(--light_purple);
     border-radius: 25px;
     min-width: 280px;
@@ -69,17 +62,14 @@ main {
 /*USER IMAGE*/
 /*home, forms, admin_panel, product_page, user_profile*/
 .rounded-circle {
-  width: 35px;
-  height: 35px;
-  background-color: var(--light_purple);
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: var(--light_purple);
+    cursor: pointer;
 }
 
 .rounded-circle:hover {
-  background-color: var(--lighter_purple);
+    background-color: var(--lighter_purple);
 }
 
 .user-profile-img {
@@ -92,154 +82,145 @@ main {
     cursor: pointer;
 }
 
-        /*PAGE CONTENT*/
+/*PAGE CONTENT*/
 
 /*forms, home, admin_panel, product_page, user_profile*/
 .container {
-  max-width: 1200px;
-  margin: 18px auto;
-  padding: 28px 36px;
-  background: var(--panel-dark);
-  border-radius: 6px;
-  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+    max-width: 1200px;
+    margin: 18px auto;
+    padding: 28px 36px;
+    background: var(--panel-dark);
+    border-radius: 6px;
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
 }
 
 /*FORM CONTROL*/
 /*forms, user_profile*/
 .form-control {
-  background-color: var(--lilac);
-  border: none;
-  border-radius: 0;
+    background-color: var(--lilac);
+    border: none;
+    border-radius: 0;
 }
+
 /*user_profile*/
 .form-control:disabled {
-  background-color: var(--lilac);
-  border: none;
-  border-radius: 0;
+    background-color: var(--lilac);
+    border: none;
+    border-radius: 0;
 }
 
 /*EXCLUSIVE TO CONTENT OF SPECIFIC PAGES*/
-    /*user_profile*/
+/*user_profile*/
 .profile-card {
-  background: var(--panel-dark);
-  border-radius: 15px;
-  padding: 40px;
-  max-width: auto;
-}
-.profile-image {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background-image: url(../images/user.png);
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
-}
-.profile-image.editing:hover {
-  opacity: 70%;
+    background: var(--panel-dark);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: auto;
 }
 
-    /*forms*/       /*NOTE THAT EDIT_PRODUCT HTML USES FORMS CSS AS WELL*/
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url(../images/user.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.profile-image.editing:hover {
+    opacity: 70%;
+}
+
+/*forms*/
+/*NOTE THAT EDIT_PRODUCT HTML USES FORMS CSS AS WELL*/
 .field {
-  margin-bottom: 10px;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
-.buttons {
-  justify-self: center;
-}
+
 /*NOTE this section is specific of form_review html*/
 .rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-  font-size: 30px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    font-size: 30px;
 }
+
 .rating input {
-  display: none;
+    display: none;
 }
+
 .rating label {
-  display: inline-block;
-  cursor: pointer;
-  color: var(--text-light);
-  transition: color 0.5s;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--text-light);
+    transition: color 0.5s;
 }
+
 .rating label:hover,
 .rating label:hover~label,
 .rating input:checked~label {
-  color: #FFBE55;
+    color: #FFBE55;
 }
 
-    /*admin_panel*/
+/*admin_panel*/
 .user-card {
-  background: var(--panel-dark);
-  border-radius: 15px;
-  padding: 40px;
-  max-width: auto;
-}
-.user-group {
-  background: linear-gradient(to top, var(--purple), var(--dark_purple));
-  ;
-  padding: 15px;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-.user-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-bottom: 3px;
-}
-.avatar {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background-image: url(../images/user.png);
-  background-size: cover;
-  background-position: center;
-  display: inline-block;
-}
-.username {
-  color: var(--text-light);
-  font-weight: 500;
+    background: var(--panel-dark);
+    border-radius: 15px;
+    padding: 40px;
+    max-width: auto;
 }
 
-    /*home*/
+.user-group {
+    background: linear-gradient(to top, var(--purple), var(--dark_purple));
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.user-item {
+    margin-bottom: 3px;
+}
+
+.avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-image: url(../images/user.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.username {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+/*home*/
 /*Pop-up*/
 .popup-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
-    position: relative;
 }
+
 .popup {
     background: var(--dark_purple);
     padding: 24px 32px;
     border-radius: 8px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
     max-width: 100%;
 }
+
 /*Histogram*/
 .ranking {
     height: 250px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
 }
-.group {
-    text-align: center;
-}
+
 .bar {
     width: 50px;
     background: linear-gradient(to top, var(--dark_purple), var(--light_purple));
     border-radius: 5px 5px 0 0;
 }
+
 /*Products*/
 .products {
     background: var(--panel-dark);
@@ -247,16 +228,20 @@ main {
     padding: 40px;
     max-width: auto;
 }
-h2 {    /*USED IN HOME*/
+
+h2 {
+    /*USED IN HOME*/
     color: var(--text-light);
     font-weight: 600;
 }
+
 .card {
     background: var(--light_purple);
     width: 100%;
     height: 400px;
     border-radius: 18px;
 }
+
 .product-img {
     height: 250px;
     width: 100%;
@@ -264,43 +249,50 @@ h2 {    /*USED IN HOME*/
     margin-top: 15px;
 }
 
-    /*edit_product*/
+/*edit_product*/
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 26px;
     flex: 1;
 }
+
 .image img {
     max-width: 300px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 .section {
     display: flex;
     align-items: flex-start;
     gap: 30px;
 }
+
 .info {
     max-width: 600px;
 }
+
 .dd {
     margin-bottom: 15px;
     line-height: 1.6;
     color: #B2B2CC
 }
+
 .title {
     display: flex;
     align-items: center;
     padding: 0 7px;
     gap: 10px;
 }
+
 .title p {
     margin: 0;
     color: #888;
     font-size: 1.2rem;
 }
+
 .product {
     display: flex;
     justify-content: space-between;
@@ -308,6 +300,7 @@ h2 {    /*USED IN HOME*/
     padding: 0 10px;
     gap: 10px;
 }
+
 .wrapped {
     display: flex;
     align-items: center;
@@ -315,6 +308,7 @@ h2 {    /*USED IN HOME*/
     gap: 10px;
     justify-content: space-between;
 }
+
 .reviews {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -322,6 +316,7 @@ h2 {    /*USED IN HOME*/
     flex: 1;
     margin-top: 20px;
 }
+
 .card {
     background: var(--light_purple);
     width: 100%;
@@ -331,15 +326,18 @@ h2 {    /*USED IN HOME*/
     padding: 20px;
     color: #111;
 }
+
 .review_top {
     display: flex;
     align-items: center;
     margin-bottom: 12px;
     justify-content: space-between;
 }
+
 .review_top h4 {
     margin: 0;
 }
+
 .review_top h4:first-child {
     white-space: nowrap;
     overflow: hidden;
@@ -350,6 +348,7 @@ h2 {    /*USED IN HOME*/
 
     margin: 0 10px 0 0;
 }
+
 .review_top h4:last-child {
     flex-shrink: 0;
     white-space: nowrap;
@@ -358,10 +357,12 @@ h2 {    /*USED IN HOME*/
     border-radius: 12px;
     font-size: 1rem;
 }
+
 .review_top p {
     color: #e0e0e0;
     font-size: 0.95rem;
 }
+
 .stars-generator {
     color: #ffcc00;
     font-size: 0.9rem;
@@ -369,6 +370,7 @@ h2 {    /*USED IN HOME*/
     align-items: center;
     gap: 4px;
 }
+
 .rating-text {
     color: #000;
     font-weight: 800;
@@ -378,6 +380,7 @@ h2 {    /*USED IN HOME*/
     padding: 2px 6px;
     border-radius: 4px;
 }
+
 .review_struct p {
     display: -webkit-box;
     -webkit-line-clamp: 5;
@@ -387,19 +390,21 @@ h2 {    /*USED IN HOME*/
     margin-top: 10px;
     color: rgba(255, 255, 255, 0.9);
 }
+
 .custom-file-upload {
     display: flex;
     align-items: center;
     gap: 15px;
     border-radius: 12px;
 }
+
 .current-filename {
-    color:var(--lilac);
+    color: var(--lilac);
     font-size: 0.9rem;
     font-style: italic;
 }
 
-        /*BUTTONS*/
+/*BUTTONS*/
 /*BTN*/
 /*home, forms, product_page, admin_panel, user_profile*/
 .btn {
@@ -415,11 +420,10 @@ h2 {    /*USED IN HOME*/
     background-color: var(--lighter_purple);
 }
 
-        /*FOOTER*/
+/*FOOTER*/
 /*forms, admin_panel, home, produt_page, user_profile*/
 footer {
-  padding: 20px;
-  background: var(--panel-dark);
-  text-align: center;
-  color: var(--text-light);
+    padding: 20px;
+    background: var(--panel-dark);
+    color: var(--text-light);
 }
