@@ -11,6 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
     .addEventListener("click", function () {
       window.location.href = "sign_in.html";
     });
+  
+  document
+    .getElementById("home-button")
+    .addEventListener("click", function () {
+      window.location.href = "home.html";
+    });
 
   /*All images, both user icon and application logo, will redirect to their corresponding pages */
   document.getElementById("logo").addEventListener("click", function () {
