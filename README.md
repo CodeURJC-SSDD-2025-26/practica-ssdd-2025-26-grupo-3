@@ -6,7 +6,7 @@
 | Mario Sauce Soriano | m.sauce.2023@alumnos.urjc.es | TabokGit |
 | Demelza Santamaría Gil | d.santamaria.2020@alumnos.urjc.es | QuantumAndromeda |
 | Alma Lucía Vázquez Beltrán | al.vazquez.2022@alumnos.urjc.es | soulieOG |
-
+| Sergio Muñoz Laureiro | s.munozl.2023@alumnos.urjc.es | SergioMunozLaureiro
 ---
 
 ## 🎭 **Preface**

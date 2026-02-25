@@ -25,6 +25,7 @@ main {
   flex: 1;
 }
 
+
 /*Header*/
 .topbar {
   background: var(--dark_purple);
@@ -67,7 +68,7 @@ main {
   cursor: pointer;
 }
 
-/*User data*/
+/*Panel*/
 .container {
   max-width: 1200px;
   margin: 18px auto;
@@ -77,16 +78,35 @@ main {
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
 }
 
-.profile-card {
+.user-card {
   background: var(--panel-dark);
   border-radius: 15px;
   padding: 40px;
   max-width: auto;
 }
 
-.profile-image {
-  width: 200px;
-  height: 200px;
+.user-group {
+  background: linear-gradient(to top, var(--purple), var(--dark_purple));
+  ;
+  padding: 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.user-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 3px;
+}
+
+.avatar {
+  width: 45px;
+  height: 45px;
   border-radius: 50%;
   background-image: url(../images/user.png);
   background-size: cover;
@@ -94,25 +114,12 @@ main {
   display: inline-block;
 }
 
-.profile-image.editing:hover {
-  opacity: 70%;
+.username {
+  color: var(--text-light);
+  font-weight: 500;
 }
 
-.form-control {
-  background-color: var(--lilac);
-  border: none;
-  border-radius: 0;
-}
-
-.form-control:disabled {
-  background-color: var(--lilac);
-  border: none;
-  border-radius: 0;
-}
-
-/*Buttons*/
 .btn {
-  width: 100%;
   background-color: var(--light_purple);
   border: 2px solid var(--dark_purple);
   border-radius: 8px;
