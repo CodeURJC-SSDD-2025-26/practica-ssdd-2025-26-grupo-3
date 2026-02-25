@@ -135,6 +135,7 @@ main {
 /*NOTE THAT EDIT_PRODUCT HTML USES FORMS CSS AS WELL*/
 .field {
     margin-bottom: 10px;
+    overflow: hidden;
 }
 
 /*NOTE this section is specific of form_review html*/
