@@ -14,7 +14,19 @@
     font-size: 0.9rem;
     font-style: italic;
 }
-
+.pill-btn{
+    background:var(--light_purple);
+    color:#111;
+    padding:8px 18px;
+    border-radius:24px;
+    font-weight:600;
+    box-shadow:inset 0 -4px rgba(0,0,0,.15),0 3px 0 rgba(0,0,0,.25);
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
 /* Estilo para el botón secundario si no lo tienes */
 .pill-btn.secondary {
     background-color: var(--lilac);
