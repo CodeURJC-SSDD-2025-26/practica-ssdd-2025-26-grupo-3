@@ -12,17 +12,12 @@
 
 html,
 body {
-  height: 100%;
   font-family: Roboto, "Segoe UI", Arial, sans-serif;
   background: var(--bg-dark);
   color: var(--text-light);
-  display: flex;
-  flex-direction: column;
 }
 
 main {
-  display: flex;
-  align-items: center;
   flex: 1;
 }
 
@@ -47,8 +42,6 @@ main {
 /*SEARCH*/
 /*home*/
 .search {
-    display: flex;
-    align-items: center;
     background: var(--light_purple);
     border-radius: 25px;
     min-width: 280px;
@@ -73,9 +66,6 @@ main {
   height: 35px;
   background-color: var(--light_purple);
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .rounded-circle:hover {
@@ -133,7 +123,6 @@ main {
   background-image: url(../images/user.png);
   background-size: cover;
   background-position: center;
-  display: inline-block;
 }
 .profile-image.editing:hover {
   opacity: 70%;
@@ -143,9 +132,7 @@ main {
 .field {
   margin-bottom: 10px;
 }
-.buttons {
-  justify-self: center;
-}
+
 /*NOTE this section is specific of form_review html*/
 .rating {
   unicode-bidi: bidi-override;
@@ -176,19 +163,11 @@ main {
 }
 .user-group {
   background: linear-gradient(to top, var(--purple), var(--dark_purple));
-  ;
   padding: 15px;
   border-radius: 5px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
   margin-bottom: 10px;
 }
 .user-item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-bottom: 3px;
 }
 .avatar {
@@ -198,7 +177,6 @@ main {
   background-image: url(../images/user.png);
   background-size: cover;
   background-position: center;
-  display: inline-block;
 }
 .username {
   color: var(--text-light);
@@ -208,33 +186,21 @@ main {
     /*home*/
 /*Pop-up*/
 .popup-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     height: 100%;
     width: 100%;
-    position: relative;
 }
 .popup {
     background: var(--dark_purple);
     padding: 24px 32px;
     border-radius: 8px;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
     gap: 10px;
     max-width: 100%;
 }
 /*Histogram*/
 .ranking {
     height: 250px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
 }
-.group {
-    text-align: center;
-}
+
 .bar {
     width: 50px;
     background: linear-gradient(to top, var(--dark_purple), var(--light_purple));
@@ -420,6 +386,5 @@ h2 {    /*USED IN HOME*/
 footer {
   padding: 20px;
   background: var(--panel-dark);
-  text-align: center;
   color: var(--text-light);
 }
