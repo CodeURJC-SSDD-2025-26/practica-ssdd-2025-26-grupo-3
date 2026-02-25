@@ -1,12 +1,12 @@
-:root{
-    --dark_purple: #5A189A;
-    --purple: #7B2CBF;
-    --light_purple: #9D4EDD;
-    --lighter_purple: #C77DFF;
-    --lilac: #E0AAFF;
-    --bg-dark: #1f1f1f;
-    --panel-dark: #252525;
-    --text-light: #f4f4f4;
+:root {
+  --dark_purple: #5A189A;
+  --purple: #7B2CBF;
+  --light_purple: #9D4EDD;
+  --lighter_purple: #C77DFF;
+  --lilac: #E0AAFF;
+  --bg-dark: #1f1f1f;
+  --panel-dark: #252525;
+  --text-light: #f4f4f4;
 }
 
 html,
@@ -63,7 +63,7 @@ main {
   background: var(--panel-dark);
   border-radius: 6px;
   box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
-  
+
 }
 
 .form-control {
@@ -72,7 +72,7 @@ main {
   border-radius: 0;
 }
 
-.field{
+.field {
   margin-bottom: 10px;
 }
 
@@ -83,37 +83,37 @@ footer {
   color: var(--text-light);
 }
 
-.pill-btn{
-    background:var(--light_purple);
-    color:#111;
-    padding:8px 18px;
-    border-radius:24px;
-    font-weight:600;
-    box-shadow:inset 0 -4px rgba(0,0,0,.15),0 3px 0 rgba(0,0,0,.25);
-  }
+.pill-btn {
+  background: var(--light_purple);
+  color: #111;
+  padding: 8px 18px;
+  border-radius: 24px;
+  font-weight: 600;
+  box-shadow: inset 0 -4px rgba(0, 0, 0, .15), 0 3px 0 rgba(0, 0, 0, .25);
+}
 
-.buttons{
+.buttons {
   justify-self: center;
 }
 
 @media (max-width: 743.5px) {
-    .pill-btn{
-        padding:3px 6px;
-    }
+  .pill-btn {
+    padding: 3px 6px;
+  }
 
 }
 
-.rating{
+.rating {
   unicode-bidi: bidi-override;
   direction: rtl;
   font-size: 30px;
 }
 
-.rating input{
+.rating input {
   display: none;
 }
 
-.rating label{
+.rating label {
   display: inline-block;
   cursor: pointer;
   color: var(--text-light);
@@ -121,7 +121,7 @@ footer {
 }
 
 .rating label:hover,
-.rating label:hover ~ label,
-.rating input:checked ~ label{
+.rating label:hover~label,
+.rating input:checked~label {
   color: #FFBE55;
 }
