@@ -137,18 +137,17 @@ main {
 
 /* 4. Sección de Producto (Imagen e Info) */
 .product {
-  display: flex;
-  flex-direction: column; /* Apilado en móviles */
-  gap: 20px;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 10px;
+    gap: 10px;
 }
 
 .section {
-  display: flex;
-  flex-direction: column; /* Apilado en móviles */
-  align-items: center;
-  gap: 30px;
-  width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
 }
 
 /* Imagen con degradados y centrado */
@@ -174,12 +173,10 @@ main {
 
 
 .image img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-  display: block;
-  object-fit: contain;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .info {
