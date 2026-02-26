@@ -95,6 +95,8 @@ main {
     background: var(--panel-dark);
     border-radius: 6px;
     box-shadow: 0 6px 30px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    width: 95%;
 }
 
 /*FORM CONTROL*/
@@ -257,14 +259,30 @@ h6 {
     margin-top: 15px;
 }
 
-/*edit_product*/
+/*product_page*/
 .grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 26px;
     flex: 1;
 }
-
+.image {
+  flex: 0 0 auto;
+  width: 100%;
+  max-width: 300px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.image::before, .image::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  left: 0;
+  pointer-events: none;
+  z-index: 2;
+}
 .image img {
     max-width: 300px;
     height: auto;
@@ -274,18 +292,24 @@ h6 {
 
 .section {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     gap: 30px;
 }
 
 .info {
     max-width: 600px;
 }
-
-.dd {
+dt { 
+    color: #B2B2CC; 
+    font-weight: bold;
+     margin-top: 10px; 
+}
+dd {
     margin-bottom: 15px;
     line-height: 1.6;
-    color: #B2B2CC
+    word-break: break-word; 
+    overflow-wrap: break-word;
+    
 }
 
 .title {
@@ -308,96 +332,81 @@ h6 {
     padding: 0 10px;
     gap: 10px;
 }
-
 .wrapped {
-    display: flex;
-    align-items: center;
-    padding: 0 10px;
-    gap: 10px;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0 20px 0;
 }
 
 .reviews {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 26px;
-    flex: 1;
-    margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
 }
 
 .card {
-    background: var(--light_purple);
-    width: 100%;
-    min-height: 150px;
-    border-radius: 18px;
-    box-shadow: 0 6px 0 rgba(0, 0, 0, .35);
-    padding: 20px;
-    color: #111;
+  background: var(--light_purple);
+  height: auto;
+  width: 100%;
+  min-height: 120px;
+  border-radius: 18px;
+  box-shadow: 0 6px 0 rgba(0,0,0,.35);
+  padding: 20px;
+  color: #111;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .review_top {
-    display: flex;
-    align-items: center;
-    margin-bottom: 12px;
-    justify-content: space-between;
-}
-
-.review_top h4 {
-    margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 12px;
 }
 
 .review_top h4:first-child {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex: 1;
+  margin: 0;
+  transition: all 0.3s ease;
+}
 
-    flex: 1;
-    min-width: 0;
-
-    margin: 0 10px 0 0;
+.review_top h4:first-child:hover {
+  white-space: normal;
+  overflow: visible;
 }
 
 .review_top h4:last-child {
-    flex-shrink: 0;
-    white-space: nowrap;
-    background: rgba(0, 0, 0, 0.2);
-    padding: 2px 10px;
-    border-radius: 12px;
-    font-size: 1rem;
-}
-
-.review_top p {
-    color: #e0e0e0;
-    font-size: 0.95rem;
-}
-
-.stars-generator {
-    color: #ffcc00;
-    font-size: 0.9rem;
-    display: flex;
-    align-items: center;
-    gap: 4px;
-}
-
-.rating-text {
-    color: #000;
-    font-weight: 800;
-    margin-left: 8px;
-    font-size: 0.8rem;
-    background: rgba(255, 255, 255, 0.2);
-    padding: 2px 6px;
-    border-radius: 4px;
+  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 0.9rem;
 }
 
 .review_struct p {
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    line-height: 1.5;
-    margin-top: 10px;
-    color: rgba(255, 255, 255, 0.9);
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 1.5;
+  margin: 10px 0 0 0;
+  color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease;
 }
+
+.card:hover .review_struct p {
+  -webkit-line-clamp: unset;
+  display: block;
+}
+
 
 .custom-file-upload {
     display: flex;
@@ -422,6 +431,12 @@ h6 {
     border: 2px solid var(--bg-dark);
     border-radius: 8px;
     cursor: pointer;
+    display: inline-flex;
+    gap:10px;
+    align-items: center;
+    
+    
+    
 }
 
 .btn:hover {
