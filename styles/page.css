@@ -8,6 +8,7 @@
     --bg-dark: #1f1f1f;
     --panel-dark: #252525;
     --text-light: #f4f4f4;
+    --grey: #888;
 }
 
 html,
@@ -295,7 +296,7 @@ h2 {
     max-width: 600px;
 }
 dt { 
-    color: #B2B2CC; 
+    color: var(--grey);
     font-weight: bold;
      margin-top: 10px; 
 }
@@ -316,7 +317,7 @@ dd {
 
 .title p {
     margin: 0;
-    color: #888;
+    color: var(--grey);
     font-size: 1.2rem;
 }
 
@@ -348,7 +349,7 @@ dd {
   border-radius: 18px;
   box-shadow: 0 6px 0 rgba(0,0,0,.35);
   padding: 20px;
-  color: #111;
+  color: var(--bg-dark);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -393,7 +394,7 @@ dd {
   overflow: hidden;
   line-height: 1.5;
   margin: 10px 0 0 0;
-  color: rgba(0, 0, 0, 0.8);
+  color:var(--bg-dark);
   transition: all 0.3s ease;
 }
 
