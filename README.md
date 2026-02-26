@@ -80,7 +80,7 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 ### **Screenshots and Page Descriptions**
 
 #### **1. Home Page**
-![Home](https://github.com/user-attachments/assets/90d1d064-c95f-4e0a-a2e9-c50e23953155)
+![Home]("https://github.com/user-attachments/assets/d8a44e82-e68b-4097-8e2f-e76e1471baf9")
 
 > [Home page displaying all products and a histogram of the most liked items. Includes search bar, login access for unauthenticated users, an image that access the user profile and a button to switch from light to dark mode.]
 
