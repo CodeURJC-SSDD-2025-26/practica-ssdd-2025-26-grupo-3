@@ -77,14 +77,57 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 
 > [Descripción opcional del flujo de navegación: Ej: "El usuario puede acceder desde la página principal a todas las secciones mediante el menú de navegación. Los usuarios anónimos solo tienen acceso a las páginas públicas, mientras que los registrados pueden acceder a su perfil y panel de usuario."]
 
-### **Capturas de Pantalla y Descripción de Páginas**
+### **Screenshots and Page Descriptions**
 
-#### **1. Página Principal / Home**
-![Página Principal](images/home-page.png)
+#### **1. Home Page**
+![Home](https://github.com/user-attachments/assets/90d1d064-c95f-4e0a-a2e9-c50e23953155)
 
-> [Descripción breve: Ej: "Página de inicio que muestra los productos destacados, categorías principales y un banner promocional. Incluye barra de navegación y acceso a registro/login para usuarios no autenticados."]
+> [Home page displaying all products and a histogram of the most liked items. Includes search bar, login access for unauthenticated users, an image that access the user profile and a button to switch from light to dark mode.]
 
-#### **AQUÍ AÑADIR EL RESTO DE PÁGINAS**
+#### **2. Create account**
+![Create account](https://github.com/user-attachments/assets/6d800ff9-41ad-4858-8324-f7efbd130cbb)
+
+> [Form to create an account with the fields email, username and password.]
+
+#### **3. Sign in**
+![Sign in](https://github.com/user-attachments/assets/81ac11e9-a7c2-4f45-a9a7-674374ed2dda)
+
+> [Form to sign in with username and password]
+
+#### **4. Product Page**
+![Product page]()
+
+> []
+
+#### **5. Form book**
+![Form Book](https://github.com/user-attachments/assets/5b2147e4-9686-47a9-812f-ea22385f7f6b)
+
+> [Form to create a book with the fields title, book cover, author, genre, saga, editorial, date of publication and synopsis.]
+
+#### **6. Form game**
+![Form game](https://github.com/user-attachments/assets/7f974d60-f4be-45ab-ab43-e5b6e79f10b9)
+
+> [Form to create a game with the fields title, game cover, company, genre, franchise, date of publication and synopsis.]
+
+#### **7. Form review**
+![Form review](https://github.com/user-attachments/assets/d80e2242-9bba-4d72-a6ca-9b047ba9b066)
+
+> [Form to write a review with a rating system display with stars.]
+
+#### **8. Edit product page**
+![Edit product]()
+
+> []
+
+#### **9. User profile**
+![User profile](https://github.com/user-attachments/assets/e4730eba-31f0-44a9-8b00-a976c882e0ec)
+
+> [User profile panel with profile picture, name, and password, with buttons to edit them.]
+
+#### **10. Admin panel**
+![Admin panel](https://github.com/user-attachments/assets/c10cba10-396a-4ba9-a2c6-092ebf5b0920)
+
+> [Administrator panel where each user can be viewed with buttons to access user profiles and to ban them]
 
 ### **Participación de Miembros en la Práctica 1**
 
