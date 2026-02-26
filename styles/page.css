@@ -34,6 +34,7 @@ main {
 /*Home, product page and forms*/
 .brand-icon {
     height: 60px;
+    cursor: pointer;
 }
 
 .brand-icon svg {
