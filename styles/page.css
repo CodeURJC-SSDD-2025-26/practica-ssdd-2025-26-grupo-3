@@ -33,10 +33,12 @@ main {
 /*BRAND-ICON*/
 /*Home, product page and forms*/
 .brand-icon {
-    width: clamp(70px, 8vw, 140px);
-    /*clamp(min,ideal,max)*/
-    height: auto;
-    cursor: pointer;
+    height: 60px;
+}
+
+.brand-icon svg {
+    height: 100%;
+    width: auto;
 }
 
 /*SEARCH*/
