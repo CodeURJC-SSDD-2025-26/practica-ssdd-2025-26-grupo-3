@@ -289,8 +289,6 @@ h6 {
 }
 
 .section {
-    display: flex;
-    align-items: center;
     gap: 30px;
 }
 
@@ -329,8 +327,6 @@ dd {
 }
 
 .reviews {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 26px;
 }
 
@@ -392,8 +388,6 @@ dd {
 
 
 .custom-file-upload {
-    display: flex;
-    align-items: center;
     gap: 15px;
     border-radius: 12px;
 }
