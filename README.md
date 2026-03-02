@@ -95,9 +95,9 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 > [Form to sign in with username and password]
 
 #### **4. Product Page**
-![Product page]()
+![Product page](images/product-page.png)
 
-> []
+> [Product page, showing all the information filled in the forms and an edit product button(only for admin), includes an image of the cover of the product. Also show the reviews that the product has with an option to add review.]
 
 #### **5. Form book**
 ![Form Book](https://github.com/user-attachments/assets/5b2147e4-9686-47a9-812f-ea22385f7f6b)
@@ -115,9 +115,9 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 > [Form to write a review with a rating system display with stars.]
 
 #### **8. Edit product page**
-![Edit product]()
+![Edit product](images/edit-product.png)
 
-> []
+> [Form to edit a book or game with the fields title, book cover, author, genre, saga, editorial, date of publication and synopsis.]
 
 #### **9. User profile**
 ![User profile](https://github.com/user-attachments/assets/e4730eba-31f0-44a9-8b00-a976c882e0ec)
