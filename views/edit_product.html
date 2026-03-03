@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="d-flex flex-column h-100">
 
 <head>
@@ -8,14 +8,14 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
-  <link rel="stylesheet" href="../styles/page.css">
+  <link rel="stylesheet" href="../styles/page.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet" />
 </head>
 
 <body class="d-flex flex-column h-100">
   <header class="topbar d-flex flex-column flex-md-row align-items-center justify-content-between gap-3 py-2">
-    <div class="brand-icon" id="logo" style="cursor: pointer;"onclick="window.location.href='home.html'">
+    <div class="brand-icon" id="logo" style="cursor: pointer" onclick="window.location.href = 'home.html'">
       <svg width="100%" height="100%" viewBox="0 0 3849 2556" version="1.1" xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="
             fill-rule: evenodd;
@@ -51,9 +51,8 @@
       </svg>
     </div>
     <div class="d-flex justify-content-center justify-content-md-end align-items-center gap-4 w-100 w-md-auto">
-      <div class="rounded-circle d-flex align-items-center justify-content-center" id="light-dark-button">
-        <i class="bi bi-moon-stars-fill"></i>
-      </div>
+      <button id="themeToggle" class="btn rounded-circle d-flex align-items-center justify-content-center"><i
+          class="bi bi-moon-stars-fill"></i></button>
       <div class="user-profile-img" id="user" onclick="window.location.href = 'user_profile.html'"></div>
     </div>
   </header>
@@ -62,57 +61,58 @@
     <div class="container">
       <div class="field">
         <div class="form-label">Title</div>
-        <input type="text" id="genre" class="form-control" placeholder="El Señor de la Humanidad">
+        <input type="text" id="genre" class="form-control" placeholder="El Señor de la Humanidad" />
       </div>
       <div class="field">
         <div class="form-label">Book Cover</div>
         <div class="custom-file-upload d-flex align-items-center">
           <button type="button" class="btn" onclick="document.getElementById('product_imagen').click()">
-            Cambiar Portada
+            Change cover
           </button>
           <span id="file-name" class="current-filename">El_señor_de_la_humanidad.jpg</span>
-          <input type="file" id="product_imagen" name="imagen" style="display: none;">
+          <input type="file" id="product_imagen" name="imagen" style="display: none" />
         </div>
       </div>
       <div class="field">
         <div class="form-label">Author</div>
-        <input type="text" id="genre" class="form-control" placeholder="Aaron Dembski-Bowden">
+        <input type="text" id="genre" class="form-control" placeholder="Aaron Dembski-Bowden" />
       </div>
       <div class="field">
         <div class="form-label">Genre</div>
-        <input type="text" id="genre" class="form-control" placeholder="Belic Science Fiction">
+        <input type="text" id="genre" class="form-control" placeholder="Belic Science Fiction" />
       </div>
       <div class="field">
         <div class="form-label">Saga</div>
-        <input type="text" id="saga" class="form-control" placeholder="The Horus Heresy">
+        <input type="text" id="saga" class="form-control" placeholder="The Horus Heresy" />
       </div>
       <div class="field">
         <div class="form-label">Editorial</div>
-        <input type="text" id="genre" class="form-control" placeholder="Black Library (Games Workshop)">
+        <input type="text" id="genre" class="form-control" placeholder="Black Library (Games Workshop)" />
       </div>
       <div class="field">
         <div class="form-label">Date of Publication</div>
-        <input type="date" id="publish_date" class="form-control" value="2016-12-01">
+        <input type="date" id="publish_date" class="form-control" value="2016-12-01" />
       </div>
       <div class="field">
         <div class="form-label">Synopsis</div>
         <input type="text" id="genre" class="form-control"
           placeholder="While the flames of Horus’s rebellion consume the galaxy, a secret war rages within the Impossible City, deep beneath the Imperial Palace. The Emperor of Mankind is locked in a desperate struggle to stabilize a breach in the Eldar Webway—the key to humanity’s future. As the Custodian Guard and the Sisters of Silence battle endless tides of daemons, 
-            the story offers a rare and haunting glimpse into the mind of the Emperor Himself, revealing the cold reality of His vision and the devastating price of His Great Work.">
+            the story offers a rare and haunting glimpse into the mind of the Emperor Himself, revealing the cold reality of His vision and the devastating price of His Great Work." />
       </div>
       <div class="buttons d-flex justify-content-center">
-        <button type="button" class="btn" onclick="window.location.href='product_page.html'">Edit
-          book</button>
+        <button type="button" class="btn" onclick="window.location.href = 'product_page.html'">
+          Edit book
+        </button>
       </div>
     </div>
   </main>
-  
+
   <footer class="text-center">
-    <p>©2026 PostCredits. Todos los derechos reservados.</p>
-    <p>Contacto: soporte@postcredits.com | +1 234 567 89</p>
+    <p>©2026 PostCredits. All rights reserved.</p>
+    <p>Contact: soporte@postcredits.com | +1 234 567 89</p>
   </footer>
-  <script src="../js/main.js"></script>
   <script src="../js/edit_product.js"></script>
+  <script src="../js/theme_change.js"></script>
 </body>
 
 </html>
