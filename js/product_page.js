@@ -10,7 +10,7 @@ document.querySelectorAll('.stars-generator').forEach(el => {
                         html += '<i class="far fa-star"></i>'; // Vacía
                     }
                 }
-                html += `<span class="rating-text">${rating}/5</span>`;
+                html += `<span class="rating-text ms-1">${rating}/5</span>`;
                 el.innerHTML = html;
             });
              

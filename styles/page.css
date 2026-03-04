@@ -460,6 +460,7 @@ dd {
 
 .btn:hover {
     background-color: var(--button-hover);
+    color: var(--text-var);
 }
 
 /*FOOTER*/
