@@ -139,6 +139,12 @@ main {
     background-color: var(--purple-5);
     border: none;
     border-radius: 0;
+    color: var(--text-dark);
+}
+
+.form-control:focus{
+    background-color: var(--purple-3);
+    box-shadow: none;
 }
 
 .form-control::placeholder{
