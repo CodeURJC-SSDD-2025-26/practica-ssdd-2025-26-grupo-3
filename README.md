@@ -68,14 +68,13 @@ Indicar cuál será el algoritmo o consulta avanzada que se implementará:
 
 ---
 
-## 🛠 **Práctica 1: Maquetación de páginas web con HTML y CSS**
+## 🛠 **Practice 1: Web page layout with HTML and CSS**
 
-### **Diagrama de Navegación**
-Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicación:
+### **Navigation diagram**
 
-![Diagrama de Navegación](images/navigation-diagram.png)
+![Navigation diagram](https://github.com/user-attachments/assets/787b2ae4-3430-4254-8fc3-e797329492d4)
 
-> [Descripción opcional del flujo de navegación: Ej: "El usuario puede acceder desde la página principal a todas las secciones mediante el menú de navegación. Los usuarios anónimos solo tienen acceso a las páginas públicas, mientras que los registrados pueden acceder a su perfil y panel de usuario."]
+> [From the home page, an administrator can access the admin panel and the forms to create a book or game. A registered user can access their profile, and all users, including unregistered users, can access the create account and sign in forms, along with the product page. From the product page, a registered user can access the form to upload a review, while an administrator can access the product editing form.]
 
 ### **Screenshots and Page Descriptions**
 
@@ -95,9 +94,9 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 > [Form to sign in with username and password]
 
 #### **4. Product Page**
-![Product page](images/product-page.png)
+![Product page](https://github.com/user-attachments/assets/de8f84b5-61fe-4d73-ba8f-2d7634147c07)
 
-> [Product page, showing all the information filled in the forms and an edit product button(only for admin), includes an image of the cover of the product. Also show the reviews that the product has with an option to add review.]
+> [Product page, showing all the information filled in the forms, an edit product button(only for admin) and a delete review button, includes an image of the cover of the product. Also show the reviews that the product has with an option to add review.]
 
 #### **5. Form book**
 ![Form Book](https://github.com/user-attachments/assets/5b2147e4-9686-47a9-812f-ea22385f7f6b)
@@ -115,7 +114,7 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 > [Form to write a review with a rating system display with stars.]
 
 #### **8. Edit product page**
-![Edit product](images/edit-product.png)
+![Edit product](https://github.com/user-attachments/assets/79bb5ea3-17fd-460f-9411-ebc835937b2b)
 
 > [Form to edit a book or game with the fields title, book cover, author, genre, saga, editorial, date of publication and synopsis.]
 
@@ -129,19 +128,19 @@ Diagrama que muestra cómo se navega entre las diferentes páginas de la aplicac
 
 > [Administrator panel where each user can be viewed with buttons to access user profiles and to ban them]
 
-### **Participación de Miembros en la Práctica 1**
+### **Member Participation in Practice 1**
 
-#### **Alumno 1 - [Nombre Completo]**
+#### **Student 1 - Demelza Santamaría Gil**
 
-[Descripción de las tareas y responsabilidades principales del alumno en el proyecto]
+Responsible for creating the user profile and admin panel pages along with their functionalities and a histogram on the home page, as well as collaborating with the rest of the team to maintain good practices and the format of the CSS and HTML files.
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [Descripción commit 1](URL_commit_1)  | [Archivo1](URL_archivo_1)   |
-|2| [Descripción commit 2](URL_commit_2)  | [Archivo2](URL_archivo_2)   |
-|3| [Descripción commit 3](URL_commit_3)  | [Archivo3](URL_archivo_3)   |
-|4| [Descripción commit 4](URL_commit_4)  | [Archivo4](URL_archivo_4)   |
-|5| [Descripción commit 5](URL_commit_5)  | [Archivo5](URL_archivo_5)   |
+|1| [User profile page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/5e108b74771e37710baf7d05eddfe35e3be520e1)  | [Archivo1](URL_archivo_1)   |
+|2| [Admin panel page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/f8c8e0f28a9b4b8ba350fb6207619ac3f4484cdb)  | [Archivo2](URL_archivo_2)   |
+|3| [Histogram in home page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/fc632b9cae0f4a1cab5e5e36b10a4ff0774c3dd7)  | [Archivo3](URL_archivo_3)   |
+|4| [Relocated CSS atributes to Bootstrap in HTML](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/3094c8943533375fea7dd7ee2643b7d88bcd60bd)  | [Archivo4](URL_archivo_4)   |
+|5| [Some other code refactored](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/e1da5ac74bcf363b1609482215e00f537641cabe)  | [Archivo5](URL_archivo_5)   |
 
 ---
 
