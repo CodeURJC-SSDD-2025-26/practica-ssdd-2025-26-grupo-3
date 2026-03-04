@@ -20,6 +20,10 @@
     --button-hover:#C77DFF;
     --topbar-bg:#5A189A;
     --popup-bg:#5A189A;
+    --user-group-top:#5A189A;
+    --user-group-down:#7B2CBF;
+    --dt-color:#888;
+    --form-control-focus:#9D4EDD;
 }
 
 [data-bs-theme="light"] {
@@ -42,6 +46,10 @@
     --button-hover:#E0AAFF;
     --topbar-bg:#9D4EDD;
     --popup-bg:#9D4EDD;
+    --user-group-top:#9D4EDD;
+    --user-group-down:#9D4EDD;
+    --dt-color:#141414;
+    --form-control-focus:#7B2CBF;
 }
 
 html,
@@ -143,7 +151,7 @@ main {
 }
 
 .form-control:focus{
-    background-color: var(--purple-3);
+    background-color: var(--form-control-focus);
     box-shadow: none;
 }
 
@@ -224,7 +232,7 @@ main {
 }
 
 .user-group {
-    background: linear-gradient(to top, var(--purple-2), var(--purple-1));
+    background: linear-gradient(to top, var(--user-group-top), var(--user-group-down));
     padding: 15px;
     border-radius: 5px;
     margin-bottom: 10px;
@@ -335,7 +343,7 @@ h6 {
     max-width: 600px;
 }
 dt { 
-    color: var(--grey);
+    color: var(--dt-color);
     font-weight: bold;
      margin-top: 10px; 
 }
@@ -354,7 +362,7 @@ dd {
 
 .title p {
     margin: 0;
-    color: var(--grey);
+    color: var(--dt-color);
     font-size: 1.2rem;
 }
 
