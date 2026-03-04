@@ -96,19 +96,25 @@
             </div>
           </div>
         </section>
-        <button type="button" class="btn align-items-center gap-2" onclick="window.location.href = 'edit_product.html'">
-          <i class="fas fa-pencil-alt"></i> Edit product
-        </button>
+        <div class="buttons d-flex align-items-center justify-content-center flex-wrap gap-1">
+          <button type="button" class="btn d-inline-flex align-items-center gap-2" onclick="window.location.href = 'edit_product.html'">
+            <i class="fas fa-pencil-alt"></i>Edit product
+          </button>
+          <button type="button" class="btn d-inline-flex align-items-center gap-2">
+            <i class="bi bi-trash3-fill"></i>Delete product
+          </button>
+        </div>
       </div>
-      <div class="wrapped d-flex align-items-center justify-content-between mt-5 mb-4">
+      <div class="wrapped d-flex align-items-center justify-content-between mt-5 mb-4 flex-wrap">
         <h4>Reviews</h4>
-        <button type="button" class="btn d-inline-flex align-items-center gap-2">
-          Delete review
-        </button>
-        <button type="button" class="btn d-inline-flex align-items-center gap-2"
-          onclick="window.location.href = 'form_review.html'">
-          <i class="fas fa-plus"></i>Add review
-        </button>
+        <div class="buttons d-flex align-items-center justify-content-center flex-wrap gap-1">
+          <button type="button" class="btn d-inline-flex align-items-center gap-2">
+            <i class="bi bi-trash3-fill"></i>Delete review
+          </button>
+          <button type="button" class="btn d-inline-flex align-items-center gap-2" onclick="window.location.href = 'form_review.html'">
+            <i class="fas fa-plus"></i>Add review
+          </button>
+        </div>
       </div>
       <section class="reviews d-flex flex-column flex-md-row">
         <div class="card">
