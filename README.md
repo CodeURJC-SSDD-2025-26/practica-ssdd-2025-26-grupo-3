@@ -150,7 +150,7 @@ Responsible for creating the user profile and admin panel pages along with their
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [Product_page & edit_product](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/514b825ef031b33748e3a1526bae7ef863c99fc3)  | [product_page.css](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/styles/product_page.css)   |
+|1| [Product_page & edit_product](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/514b825ef031b33748e3a1526bae7ef863c99fc3)  | [product_page.css](styles/product_page.css)   |
 |2| [Review button & star-rating](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/b3586b626fa15c523902814b9c27afaf8e84d8a8)  | [product_page.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/product_page.html)   |
 |3| [JS file for edit_product & product_page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/b03b1fc66e17c564610484c577c12a75bf2dd0e3)  | [product_page.js](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/js/product_page.js)   |
 |4| [Changes in home & edit_product](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/1fc6a8e29714c3312729ab220f2d8763efa16bfd)  | [edit_product.css](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/styles/edit_product.css)   |
