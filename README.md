@@ -144,7 +144,7 @@ Responsible for creating the user profile and admin panel pages along with their
 
 ---
 
-#### **Student 2 - [Sergio Muñoz Laureiro]**
+#### **Student 2 - Sergio Muñoz Laureiro**
 
 Responsible for creating the product page and the edit product formulary along with their functionalities, as well as collaboratinf with the rest of the team to maintain good practices and the format of the CSS and HTML files.
 
@@ -172,17 +172,17 @@ In charge of the form pages for the products (books and games) as well as the re
 
 ---
 
-#### **Alumno 4 - [Nombre Completo]**
+#### **Alumno 4 - Mario Sauce Soriano**
 
-[Descripción de las tareas y responsabilidades principales del alumno en el proyecto]
+Tasked with the home, sign in and sign up pages; the logo and logotype creation; the light theme and cooperate with the team to make all the proyect cohesive.
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [Descripción commit 1](URL_commit_1)  | [Archivo1](URL_archivo_1)   |
-|2| [Descripción commit 2](URL_commit_2)  | [Archivo2](URL_archivo_2)   |
-|3| [Descripción commit 3](URL_commit_3)  | [Archivo3](URL_archivo_3)   |
-|4| [Descripción commit 4](URL_commit_4)  | [Archivo4](URL_archivo_4)   |
-|5| [Descripción commit 5](URL_commit_5)  | [Archivo5](URL_archivo_5)   |
+|1| [Home page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/395efcb8a73fe8970b788b966dd2f53ca83201d4)  | [home.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/395efcb8a73fe8970b788b966dd2f53ca83201d4/views/home.html)   |
+|2| [Sign in and sign up pages](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/16b0b1028f52e087008fe608eca50ace800fa462)  | [sign-up.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/16b0b1028f52e087008fe608eca50ace800fa462/views/sign_up.html)   |
+|3| [Logo images](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/fce4d98c6caff235054766f51fde219d59c058aa)  | [Logo](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/fce4d98c6caff235054766f51fde219d59c058aa/images/logo.png)   |
+|4| [Bootstrap code](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/9367c480bc0ff52e842dffd0050999ae00469d64)  | [page.css](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/9367c480bc0ff52e842dffd0050999ae00469d64/styles/page.css)   |
+|5| [Light theme](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/62cd0e68f6e361dc4e7d3e8f8147f8bed9af99de)  | [theme_change.js](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/62cd0e68f6e361dc4e7d3e8f8147f8bed9af99de/js/theme_change.js)   |
 
 ---
 
