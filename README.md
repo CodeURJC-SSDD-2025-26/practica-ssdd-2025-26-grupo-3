@@ -79,7 +79,7 @@ Indicar cuál será el algoritmo o consulta avanzada que se implementará:
 ### **Screenshots and Page Descriptions**
 
 #### **1. Home Page**
-![Home](https://github.com/user-attachments/assets/d8a44e82-e68b-4097-8e2f-e76e1471baf9)
+![Home](https://github.com/user-attachments/assets/26944c9b-0086-4055-ba18-0a5c7d54fd26)
 
 > [Home page displaying all products and a histogram of the most liked items. Includes search bar, login access for unauthenticated users, an image that access the user profile and a button to switch from light to dark mode.]
 
@@ -94,17 +94,17 @@ Indicar cuál será el algoritmo o consulta avanzada que se implementará:
 > [Form to sign in with username and password]
 
 #### **4. Product Page**
-![Product page](https://github.com/user-attachments/assets/de8f84b5-61fe-4d73-ba8f-2d7634147c07)
+![Product page](https://github.com/user-attachments/assets/21a9448c-b004-42a3-9367-347ecd6cc513)
 
 > [Product page, showing all the information filled in the forms, an edit product button(only for admin) and a delete review button, includes an image of the cover of the product. Also show the reviews that the product has with an option to add review.]
 
 #### **5. Form book**
-![Form Book](https://github.com/user-attachments/assets/5b2147e4-9686-47a9-812f-ea22385f7f6b)
+![Form Book](https://github.com/user-attachments/assets/f9d99866-93e0-424b-b6f1-24486c954387)
 
 > [Form to create a book with the fields title, book cover, author, genre, saga, editorial, date of publication and synopsis.]
 
 #### **6. Form game**
-![Form game](https://github.com/user-attachments/assets/7f974d60-f4be-45ab-ab43-e5b6e79f10b9)
+![Form game](https://github.com/user-attachments/assets/bfe175c7-6a1d-4fe7-b2de-c3b77eb13fd8)
 
 > [Form to create a game with the fields title, game cover, company, genre, franchise, date of publication and synopsis.]
 
@@ -114,7 +114,7 @@ Indicar cuál será el algoritmo o consulta avanzada que se implementará:
 > [Form to write a review with a rating system display with stars.]
 
 #### **8. Edit product page**
-![Edit product](https://github.com/user-attachments/assets/79bb5ea3-17fd-460f-9411-ebc835937b2b)
+![Edit product](https://github.com/user-attachments/assets/d92c7b90-4ce8-4435-afa9-0f481026248d)
 
 > [Form to edit a book or game with the fields title, book cover, author, genre, saga, editorial, date of publication and synopsis.]
 
@@ -136,11 +136,11 @@ Responsible for creating the user profile and admin panel pages along with their
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [User profile page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/5e108b74771e37710baf7d05eddfe35e3be520e1)  | [Archivo1](URL_archivo_1)   |
-|2| [Admin panel page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/f8c8e0f28a9b4b8ba350fb6207619ac3f4484cdb)  | [Archivo2](URL_archivo_2)   |
-|3| [Histogram in home page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/fc632b9cae0f4a1cab5e5e36b10a4ff0774c3dd7)  | [Archivo3](URL_archivo_3)   |
-|4| [Relocated CSS atributes to Bootstrap in HTML](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/3094c8943533375fea7dd7ee2643b7d88bcd60bd)  | [Archivo4](URL_archivo_4)   |
-|5| [Some other code refactored](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/e1da5ac74bcf363b1609482215e00f537641cabe)  | [Archivo5](URL_archivo_5)   |
+|1| [User profile page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/5e108b74771e37710baf7d05eddfe35e3be520e1)  | [user_profile.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/user_profile.html)   |
+|2| [Admin panel page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/f8c8e0f28a9b4b8ba350fb6207619ac3f4484cdb)  | [admin_panel.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/admin_panel.html)   |
+|3| [Histogram in home page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/fc632b9cae0f4a1cab5e5e36b10a4ff0774c3dd7)  | [home.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/home.html)   |
+|4| [Relocated CSS atributes to Bootstrap in HTML](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/3094c8943533375fea7dd7ee2643b7d88bcd60bd)  | [page.css](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/styles/page.css)   |
+|5| [Some other code refactored](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/e1da5ac74bcf363b1609482215e00f537641cabe)  | [admin_panel.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/admin_panel.html)   |
 
 ---
 
