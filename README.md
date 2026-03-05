@@ -144,9 +144,9 @@ Responsible for creating the user profile and admin panel pages along with their
 
 ---
 
-#### **Alumno 2 - [Sergio Muñoz Laureiro]**
+#### **Student 2 - [Sergio Muñoz Laureiro]**
 
-[Responsible for creating the product page and the edit product formulary along with their functionalities, as well as collaboratinf with the rest of the team to maintain good practices and the format of the CSS and HTML files.]
+Responsible for creating the product page and the edit product formulary along with their functionalities, as well as collaboratinf with the rest of the team to maintain good practices and the format of the CSS and HTML files.
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
@@ -158,17 +158,17 @@ Responsible for creating the user profile and admin panel pages along with their
 
 ---
 
-#### **Alumno 3 - [Nombre Completo]**
+#### **Student 3 - Alma Lucía Vázquez Beltrán**
 
-[Descripción de las tareas y responsabilidades principales del alumno en el proyecto]
+In charge of the form pages for the products (books and games) as well as the reviews. United all the css files into one and designed the logo for the page.
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [Descripción commit 1](URL_commit_1)  | [Archivo1](URL_archivo_1)   |
-|2| [Descripción commit 2](URL_commit_2)  | [Archivo2](URL_archivo_2)   |
-|3| [Descripción commit 3](URL_commit_3)  | [Archivo3](URL_archivo_3)   |
-|4| [Descripción commit 4](URL_commit_4)  | [Archivo4](URL_archivo_4)   |
-|5| [Descripción commit 5](URL_commit_5)  | [Archivo5](URL_archivo_5)   |
+|1| [First Prototype for the book and games forms](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/1365ba676d641f2ef980039e0ea02efc27771a99)  | [formGame.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/1365ba676d641f2ef980039e0ea02efc27771a99/views/formGame.html) [formBook.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/1365ba676d641f2ef980039e0ea02efc27771a99/views/formBook.html)  |
+|2| [First Prototype of the review form](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/8d9c7d8f7ed6008f21c66ed42a57766ec7f21793)  | [form_review.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/8d9c7d8f7ed6008f21c66ed42a57766ec7f21793/views/form_review.html)   |
+|3| [Created a united css document](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/e72c21190030211664b279ae9e4dfb9f93da929d)  | [page.css](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/e72c21190030211664b279ae9e4dfb9f93da929d/styles/page.css)   |
+|4| [Deleted extra css documents and properly formated the htmls and css to add bootstrap](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/87889524ebfb057bb58fd965c55d13c9369f73ab)  | [form_book.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/87889524ebfb057bb58fd965c55d13c9369f73ab/views/form_book.html)   |
+|5| [After positive feedback, added suggested buttons by the professor](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/f1376bb94477e41dc8bf087e4465a02eb2d13a76)  | [product_page.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/f1376bb94477e41dc8bf087e4465a02eb2d13a76/views/product_page.html)   |
 
 ---
 
