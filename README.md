@@ -136,11 +136,11 @@ Responsible for creating the user profile and admin panel pages along with their
 
 | Nº    | Commits      | Files      |
 |:------------: |:------------:| :------------:|
-|1| [User profile page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/5e108b74771e37710baf7d05eddfe35e3be520e1)  | [user_profile.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/user_profile.html)   |
-|2| [Admin panel page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/f8c8e0f28a9b4b8ba350fb6207619ac3f4484cdb)  | [admin_panel.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/admin_panel.html)   |
-|3| [Histogram in home page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/fc632b9cae0f4a1cab5e5e36b10a4ff0774c3dd7)  | [home.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/home.html)   |
-|4| [Relocated CSS atributes to Bootstrap in HTML](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/3094c8943533375fea7dd7ee2643b7d88bcd60bd)  | [page.css](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/styles/page.css)   |
-|5| [Some other code refactored](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/e1da5ac74bcf363b1609482215e00f537641cabe)  | [admin_panel.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/main/views/admin_panel.html)   |
+|1| [User profile page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/5e108b74771e37710baf7d05eddfe35e3be520e1)  | [user_profile.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/5e108b74771e37710baf7d05eddfe35e3be520e1/views/user_profile.html)   |
+|2| [Admin panel page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/f8c8e0f28a9b4b8ba350fb6207619ac3f4484cdb)  | [admin_panel.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/f8c8e0f28a9b4b8ba350fb6207619ac3f4484cdb/views/admin_panel.html)   |
+|3| [Histogram in home page](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/fc632b9cae0f4a1cab5e5e36b10a4ff0774c3dd7)  | [home.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/fc632b9cae0f4a1cab5e5e36b10a4ff0774c3dd7/views/home.html)   |
+|4| [Relocated CSS atributes to Bootstrap in HTML](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/3094c8943533375fea7dd7ee2643b7d88bcd60bd)  | [page.css](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/3094c8943533375fea7dd7ee2643b7d88bcd60bd/styles/page.css)   |
+|5| [Some other code refactored](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/commit/e1da5ac74bcf363b1609482215e00f537641cabe)  | [admin_panel.html](https://github.com/CodeURJC-SSDD-2025-26/practica-ssdd-2025-26-grupo-3/blob/e1da5ac74bcf363b1609482215e00f537641cabe/views/admin_panel.html)   |
 
 ---
 
