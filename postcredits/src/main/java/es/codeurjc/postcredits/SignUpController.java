@@ -10,6 +10,8 @@ public class SignUpController {
     @GetMapping("/sign-up")
     public String home(Model model) {
 
+        model.addAttribute("sign-in", true);
+        
         return "sign_up";
     }
 
