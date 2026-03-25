@@ -11,9 +11,9 @@ public class HomeController {
     public String home(Model model) {
 
         model.addAttribute("admin", true);
-        model.addAttribute("sign-in",true);
-        model.addAttribute("sign-up",true);
-        model.addAttribute("search-bar", true);
+        model.addAttribute("sign_in",true);
+        model.addAttribute("sign_up",true);
+        model.addAttribute("search_bar", true);
         model.addAttribute("user", true);
 
         return "home";
