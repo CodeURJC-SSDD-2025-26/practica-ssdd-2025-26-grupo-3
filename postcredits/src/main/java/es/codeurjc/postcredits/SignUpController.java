@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class SignUpController {
     
-    @GetMapping("/sign-up")
-    public String home(Model model) {
+    @GetMapping("/sign_up")
+    public String signUp(Model model) {
 
         model.addAttribute("sign_in", true);
         
