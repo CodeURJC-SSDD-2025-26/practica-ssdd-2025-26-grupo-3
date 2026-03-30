@@ -21,38 +21,21 @@
       <div class="products mb-5">
         <h2 class="text-center mb-3">Products</h2>
         <div class="row g-3">
-          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-            <div class="card w-75 h-100" onclick="window.location.href = '/product_page'">
-              <img src="../images/El_señor_de_la_humanidad.jpg" class="product-img" />
+          {{#allProducts}}
+           <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
+            <div class="card w-75 h-100" style="cursor: pointer;" onclick="window.location.href = '/product_page/{{id}}'">
+              <img src="/images/{{imageURL}}" class="product-img" alt="{{name}}" />
               <div class="card-title text-center pt-1">
-                <h6>El señor de la humanidad</h6>
+                <h6>{{name}}</h6>
               </div>
             </div>
           </div>
-          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-            <div class="card w-75 h-100" onclick="window.location.href = '/product_page'">
-              <img src="../images/Nacidos_de_la_Bruma_El_imperio_final.png" class="product-img" />
-              <div class="card-title text-center pt-1">
-                <h6>Nacidos de la bruma</h6>
-              </div>
-            </div>
+          {{/allProducts}}
+          {{^allProducts}}
+          <div class="alert alert-danger">
+            No products yet.
           </div>
-          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-            <div class="card w-75 h-100" onclick="window.location.href = '/product_page'">
-              <img src="../images/silksong.png" class="product-img" />
-              <div class="card-title text-center pt-1">
-                <h6>Silksong</h6>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-md-4 d-flex justify-content-center">
-            <div class="card w-75 h-100" onclick="window.location.href = '/product_page'">
-              <img src="../images/Skyrim.png" class="product-img" />
-              <div class="card-title text-center pt-1">
-                <h6>Skyrim</h6>
-              </div>
-            </div>
-          </div>
+          {{/allProducts}}
         </div>
       </div>
 
