@@ -20,117 +20,98 @@
 
   <main class="d-flex align-items-center">
     <div class="container">
+      {{#type}}
       <div class="product d-flex align-items-start justify-content-center flex-wrap gap-10">
         <section class="d-flex">
           <div class="section d-flex flex-column flex-md-row align-items-center">
             <div class="image d-flex justify-content-center">
-              <img src="../images/El_señor_de_la_humanidad.jpg" alt="El señor de la humanidad" />
+              <img src="/images/{{imageURL}}" alt="{{name}}" />
             </div>
             <div class="info">
               <div class="title d-flex align-items-center flex-wrap gap-2 mb-2">
-                <h1><strong>El Señor de la humanidad</strong></h1>
-                <p>(2016)</p>
+                <h1><strong>{{name}}</strong></h1>
+                <p>({{yearFromDate}})</p>
               </div>
+              
               <dl>
+                {{#book}}
                 <dt><strong>Author</strong></dt>
-                <dd>Aaron Dembski-Bowden</dd>
+                <dd>{{author}}</dd>
+                {{/book}}
+                {{#game}}
+                <dt><strong>Company</strong></dt>
+                <dd>{{company}}</dd>
+                {{/game}}
                 <dt><strong>Genre</strong></dt>
-                <dd>Belic Science Fiction</dd>
+                <dd>{{genre}}</dd>
+                {{#book}}
                 <dt><strong>Saga</strong></dt>
-                <dd>The Horus Heresy</dd>
+                <dd>{{saga}}</dd>
+                {{/book}}
+                {{#game}}
+
+                <dt><strong>Franchise</strong></dt>
+                <dd>{{franchise}}</dd>
+                {{/game}}
                 <dt><strong>Editorial</strong></dt>
-                <dd>Black Library (Games Workshop)</dd>
+                <dd>{{editorial}}</dd>
                 <dt><strong>Synopsis</strong></dt>
                 <dd>
-                  the flames of Horus’s rebellion consume the galaxy, a secret
-                  war rages within the Impossible City, deep beneath the
-                  Imperial Palace. The Emperor of Mankind is locked in a
-                  desperate struggle to stabilize a breach in the Eldar
-                  Webway—the key to humanity’s future. As the Custodian Guard
-                  and the Sisters of Silence battle endless tides of daemons,
-                  the story offers a rare and haunting glimpse into the mind
-                  of the Emperor Himself, revealing the cold reality of His
-                  vision and the devastating price of His Great Work.
+                  {{synopsis}}
                 </dd>
               </dl>
             </div>
           </div>
         </section>
+       
         <div class="buttons d-flex align-items-center justify-content-center flex-wrap gap-1">
-          <button type="button" class="btn d-inline-flex align-items-center gap-2" onclick="window.location.href = '/edit_product'">
+          <button type="button" class="btn d-inline-flex align-items-center gap-2" onclick="window.location.href = '/edit_product/{{id}}'">
             <i class="fas fa-pencil-alt"></i>Edit product
           </button>
-          <button type="button" class="btn d-inline-flex align-items-center gap-2">
+          <button type="button" 
+            class="btn d-inline-flex align-items-center gap-2" 
+            onclick="if(confirm('¿Estás seguro de eliminar este producto?')) window.location.href='/product/delete/{{id}}'">
             <i class="bi bi-trash3-fill"></i>Delete product
           </button>
         </div>
-      </div>
+      </div> 
+      
       <div class="wrapped d-flex align-items-center justify-content-between mt-5 mb-4 flex-wrap">
         <h4>Reviews</h4>
         <div class="buttons d-flex align-items-center justify-content-center flex-wrap gap-1">
           <button type="button" class="btn d-inline-flex align-items-center gap-2">
             <i class="bi bi-trash3-fill"></i>Delete review
           </button>
-          <button type="button" class="btn d-inline-flex align-items-center gap-2" onclick="window.location.href = '/form_review'">
+          <button type="button" class="btn d-inline-flex align-items-center gap-2" onclick=" window.location.href = '/form_review'">
             <i class="fas fa-plus"></i>Add review
           </button>
         </div>
       </div>
       <section class="reviews d-flex flex-column flex-md-row">
-        <div class="card">
-          <div class="review_struct">
-            <div class="review_top d-flex align-items-center justify-content-between gap-2">
-              <h4>Harold Bloom</h4>
-              <div class="stars-generator d-flex align-items-center justify-content-between" data-rating="3.5"></div>
+          {{#reviews}}
+          <div class="card">
+            <div class="review_struct">
+              <div class="review_top d-flex align-items-center justify-content-between gap-2">
+                <h4>{{name}}</h4>
+                <div class="stars-generator d-flex align-items-center justify-content-between" data-rating="{{rating}}"></div>
+              </div>
+              <p>
+                "{{comment}}"
+              </p>
             </div>
-            <p>
-              "It is a work of overflowing imagination that, despite its
-              commercial shackles, manages to capture the agony of a god who
-              discovers, too late, that even the purest reason can be devoured
-              by myth."
-            </p>
-          </div>
-          <button type="button" class="btn d-flex align-items-center justify-content-center gap-2 mt-3">
-            <i class="bi bi-trash3-fill"></i>Delete review
-          </button>
+            <button type="button" class="btn d-flex align-items-center justify-content-center gap-2 mt-3" onclick=" if(confirm('¿Estás seguro de eliminar esta review?'))window.location.href = '/product_page/{{id}}/delete_review/{{idReview}}'">
+              <i class="bi bi-trash3-fill"></i>Delete review
+            </button>
+        
         </div>
-        <div class="card">
-          <div class="review_struct">
-            <div class="review_top d-flex align-items-center justify-content-between gap-2">
-              <h4 title="Marcel Proust Leovigildo Vargas Segundo">
-                Marcel Proust Leovigildo Vargas Segundo
-              </h4>
-              <div class="stars-generator d-flex align-items-center justify-content-between" data-rating="4"></div>
-            </div>
-            <p>
-              "It is a crystal cathedral built over a nightmare abyss; a book
-              that understands that the true horror is not death, but the
-              certainty that even our vastest dreams are condemned to be
-              misunderstood by those who will follow."
-            </p>
+          {{/reviews}}
+          {{^reviews}}
+          <div class="alert alert-info">
+            No reviews yet. Be the first to review this product!
           </div>
-          <button type="button" class="btn d-flex align-items-center justify-content-center gap-2 mt-3">
-            <i class="bi bi-trash3-fill"></i>Delete review
-          </button>
-        </div>
-        <div class="card">
-          <div class="review_struct">
-            <div class="review_top d-flex align-items-center justify-content-between gap-2">
-              <h4>Arturo Pérez-Reverte</h4>
-              <div class="stars-generator d-flex align-items-center justify-content-between" data-rating="3.5"></div>
-            </div>
-            <p>
-              "Es una crónica de una resistencia inútil y soberbia; el retrato
-              de un hombre solo contra la marea, que comprende que la historia
-              no la escriben los vencedores, sino los que mueren con las botas
-              puestas sabiendo que todo estaba perdido desde el principio."
-            </p>
-          </div>
-          <button type="button" class="btn d-flex align-items-center justify-content-center gap-2 mt-3">
-            <i class="bi bi-trash3-fill"></i>Delete review
-          </button>
-        </div>
+          {{/reviews}}
       </section>
+      {{/type}}
     </div>
   </main>
 
