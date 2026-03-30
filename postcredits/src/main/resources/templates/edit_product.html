@@ -17,54 +17,77 @@
   {{>header}}
 
   <main class="d-flex align-items-center">
-    <div class="container">
-      <div class="field">
-        <div class="form-label">Title</div>
-        <input type="text" id="genre" class="form-control" placeholder="El Señor de la Humanidad" />
+  <div class="container">
+    {{#type}}
+    
+    <form action="/edit_product/update/{{id}}" method="post" enctype="multipart/form-data">
+       <div class="field mb-3">
+        <div class="form-label font-weight-bold">Title</div>
+        <input type="text" name="name" class="form-control" value="{{name}}" />
       </div>
-      <div class="field">
-        <div class="form-label">Book Cover</div>
-        <div class="custom-file-upload d-flex align-items-center">
-          <button type="button" class="btn" onclick="document.getElementById('product_imagen').click()">
-            Change cover
-          </button>
-          <span id="file-name" class="current-filename">El_señor_de_la_humanidad.jpg</span>
-          <input type="file" id="product_imagen" name="imagen" style="display: none" />
-        </div>
-      </div>
-      <div class="field">
-        <div class="form-label">Author</div>
-        <input type="text" id="genre" class="form-control" placeholder="Aaron Dembski-Bowden" />
-      </div>
-      <div class="field">
-        <div class="form-label">Genre</div>
-        <input type="text" id="genre" class="form-control" placeholder="Belic Science Fiction" />
-      </div>
-      <div class="field">
-        <div class="form-label">Saga</div>
-        <input type="text" id="saga" class="form-control" placeholder="The Horus Heresy" />
-      </div>
-      <div class="field">
-        <div class="form-label">Editorial</div>
-        <input type="text" id="genre" class="form-control" placeholder="Black Library (Games Workshop)" />
-      </div>
-      <div class="field">
-        <div class="form-label">Date of Publication</div>
-        <input type="date" id="publish_date" class="form-control" value="2016-12-01" />
-      </div>
-      <div class="field">
-        <div class="form-label">Synopsis</div>
-        <input type="text" id="genre" class="form-control"
-          placeholder="While the flames of Horus’s rebellion consume the galaxy, a secret war rages within the Impossible City, deep beneath the Imperial Palace. The Emperor of Mankind is locked in a desperate struggle to stabilize a breach in the Eldar Webway—the key to humanity’s future. As the Custodian Guard and the Sisters of Silence battle endless tides of daemons, 
-            the story offers a rare and haunting glimpse into the mind of the Emperor Himself, revealing the cold reality of His vision and the devastating price of His Great Work." />
-      </div>
-      <div class="buttons d-flex justify-content-center">
-        <button type="button" class="btn" onclick="window.location.href = '/product_page'">
-          Edit book
-        </button>
-      </div>
+  
+  <div class="field mb-3">
+    <div class="form-label">Book Cover</div>
+    <div class="custom-file-upload d-flex align-items-center">
+      <button type="button" class="btn" onclick="document.getElementById('product_imagen').click()">
+        Change cover
+      </button>
+      <span id="file-name" class="current-filename">{{imageURL}}</span>
+      
+      <input type="file" id="product_imagen" name="imagen" style="display: none" accept="image/*" />
     </div>
-  </main>
+  </div>
+  {{#book}}
+      <div class="field mb-3">
+        <div class="form-label font-weight-bold">Author</div>
+        <input type="text" name="author" class="form-control" value="{{author}}" />
+      </div>
+  {{/book}}
+  {{#game}}
+      <div class="field mb-3">
+        <div class="form-label font-weight-bold">Company</div>
+        <input type="text" name="company" class="form-control" value="{{company}}" />
+      </div>
+  {{/game}}
+      <div class="field mb-3">
+        <div class="form-label font-weight-bold">Genre</div>
+        <input type="text" name="genre" class="form-control" value="{{genre}}" />
+      </div>
+  {{#book}}
+      <div class="field mb-3">
+        <div class="form-label font-weight-bold">Saga</div>
+        <input type="text" name="saga" class="form-control" value="{{saga}}" />
+      </div>
+  {{/book}}
+  {{#game}}
+      <div class="field mb-3">
+        <div class="form-label font-weight-bold">Franchise</div>
+        <input type="text" name="franchise" class="form-control" value="{{franchise}}" />
+      </div>
+  {{/game}}
+
+      <div class="field mb-3">
+        <div class="form-label">Date of Publication</div>
+        <input type="date" name="date" id="publish_date" class="form-control" value="{{htmlDate}}" />
+      </div>
+
+      <div class="field mb-3">
+        <div class="form-label font-weight-bold">Synopsis</div>
+        <textarea name="synopsis" class="form-control" rows="4">{{synopsis}}</textarea>
+      </div>
+
+      <div class="buttons d-flex justify-content-center gap-3">
+        <button type="submit" class="btn btn-primary px-4">
+          Save Changes
+        </button>
+        <a href="/product_page/{{id}}" class="btn btn-secondary px-4">
+          Cancel
+        </a>
+      </div>
+    </form>
+    {{/type}}
+  </div>
+</main>
 
   {{>footer}}
   <script src="../js/edit_product.js"></script>
