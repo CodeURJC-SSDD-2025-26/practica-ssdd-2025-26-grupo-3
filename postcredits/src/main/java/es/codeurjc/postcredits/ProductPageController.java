@@ -5,6 +5,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 
@@ -13,7 +14,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 public class ProductPageController {
    @Autowired ListService listService;
     @GetMapping("/product_page/{id}")
-    public String productPage(Model model, @PathVariable long id){
+    public String productPage(Model model, @PathVariable long id,@RequestParam(name = "success", required = false) Boolean success,@RequestParam(name = "delete", required = false) Boolean delete) {
+         
        Product product=listService.foundProductById(id);
        if(product!=null){
         model.addAttribute("type", product);
@@ -24,11 +26,18 @@ public class ProductPageController {
             model.addAttribute("book",false);
             model.addAttribute("game",true);
         }
+        if (Boolean.TRUE.equals(success)) {
+            model.addAttribute("mensajeExito", "¡Producto actualizado correctamente!");
+        }
+        if (Boolean.TRUE.equals(delete)) {
+            model.addAttribute("mensajeExito", "¡Reseña borrada correctamente!");
+        }
         //model.addAttribute("product",product);
         return "product_page";
        } else {
          return "redirect:/";
        }
+
     }
     @GetMapping("/product/delete/{id}")
     public String deleteProduct(@PathVariable long id) {
@@ -37,13 +46,13 @@ public class ProductPageController {
     
     // 2. Tras borrarlo, redirigimos al HOME
     // (Porque la página del producto ya no existe)
-        return "redirect:/";
+        return "redirect:/"+"?success=true";
     }
     @GetMapping("/product_page/{id}/delete_review/{idReview}")
     public String deleteReview(@PathVariable("id") long id, @PathVariable("idReview") long idReview) {
         // Assuming you have a method to delete a review by its ID
          listService.deleteReviewById(id, idReview);
-        return "redirect:/product_page/" + id;
+        return "redirect:/product_page/" + id + "?delete=true";
     }
    
     

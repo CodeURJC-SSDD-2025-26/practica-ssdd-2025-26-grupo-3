@@ -22,7 +22,7 @@ public class EditProductController {
      @Autowired
     private ListService listService;
     @GetMapping("/edit_product/{id}")
-    public String editProduct(@PathVariable long id, Model model){
+    public String editProduct(@PathVariable long id, Model model)    {
           Product foundProduct = null;
         for(Product p : this.listService.getProducts()){
             if(p.getId() == id){
@@ -38,6 +38,7 @@ public class EditProductController {
                 break;
             }
         }
+       
 
         return "edit_product";
     }
@@ -55,6 +56,7 @@ public String updateProduct(@PathVariable long id,
                          ) {
     
     Product p = listService.foundProductById(id);
+    
     p.setName(name);
     p.setSynopsis(synopsis);
     p.setDate(date);
@@ -81,8 +83,10 @@ public String updateProduct(@PathVariable long id,
     } else if (p instanceof Game) {
         Game g = (Game) p;
         g.setCompany(company);
+        g.setFranchise(franchise);
     }
+
     // Al terminar, redirigimos a la página del producto para ver los cambios
-    return "redirect:/product_page/" + id;
+    return "redirect:/product_page/" + id + "?success=true";
 }
 }
