@@ -342,6 +342,7 @@ h6 {
 .info {
     max-width: 600px;
 }
+
 dt { 
     color: var(--dt-color);
     font-weight: bold;
@@ -365,7 +366,10 @@ dd {
     color: var(--dt-color);
     font-size: 1.2rem;
 }
-
+.title h1{
+    word-wrap: break-word; /* O overflow-wrap: break-word; */
+    width: 100%;
+}
 .product {
     padding: 0 10px;
 }
