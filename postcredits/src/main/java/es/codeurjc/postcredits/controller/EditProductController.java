@@ -1,4 +1,4 @@
-package es.codeurjc.postcredits;
+package es.codeurjc.postcredits.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.format.annotation.DateTimeFormat;
@@ -9,6 +9,11 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
+
+import es.codeurjc.postcredits.model.Book;
+import es.codeurjc.postcredits.model.Game;
+import es.codeurjc.postcredits.model.Product;
+import es.codeurjc.postcredits.service.ListService;
 
 import java.nio.file.Files;
 import java.nio.file.Path;

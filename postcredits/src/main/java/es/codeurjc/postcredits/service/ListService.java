@@ -1,4 +1,4 @@
-package es.codeurjc.postcredits;
+package es.codeurjc.postcredits.service;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,6 +6,10 @@ import java.util.List;
 import java.util.GregorianCalendar;
 
 import org.springframework.stereotype.Service;
+
+import es.codeurjc.postcredits.model.Book;
+import es.codeurjc.postcredits.model.Game;
+import es.codeurjc.postcredits.model.Product;
 
 @Service
 public class ListService {

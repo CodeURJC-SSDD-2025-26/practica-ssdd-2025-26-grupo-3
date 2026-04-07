@@ -1,4 +1,4 @@
-package es.codeurjc.postcredits;
+package es.codeurjc.postcredits.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
